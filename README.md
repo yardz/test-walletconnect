@@ -19,3 +19,5 @@ Also, i add same simple tests, just to show my knowledge in this area.
 ```bash
 yarn test
 ```
+
+"Production" url: [https://test-walletconnect-kappa.vercel.app/](https://test-walletconnect-kappa.vercel.app/)
