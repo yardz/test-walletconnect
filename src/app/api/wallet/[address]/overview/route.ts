@@ -1,11 +1,10 @@
-import { Token, WalletOverview } from "@src/interfaces/api";
-import { getInfuraClient } from "@src/services/getInfuraClient";
+import { WalletOverview } from "@src/interfaces/api";
 import { getMoralisClient } from "@src/services/getMoralisClient";
-import { getWeb3Provider } from "@src/services/getWeb3Provider";
 import { getBalance } from "@src/utils/blockchain/getBalance";
 import { getEstimateGasFee } from "@src/utils/blockchain/getEstimateGasFee";
-import { weiToEther } from "@src/utils/blockchain/weiToEther";
 import { NextRequest, NextResponse } from "next/server";
+
+export const revalidate = 0;
 
 export async function GET(
 	request: NextRequest,

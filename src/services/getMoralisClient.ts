@@ -1,6 +1,5 @@
 import Moralis from "moralis";
 import { EvmChain } from "@moralisweb3/common-evm-utils";
-import { getTransaction } from "web3-eth";
 
 export const getMoralisClient = async () => {
 	if (!Moralis.Core.isStarted) {
@@ -31,7 +30,8 @@ export const getMoralisClient = async () => {
 				order: "DESC",
 				address: address,
 			});
-			return response.result;
+			const transactions = response.result;
+			return transactions.map((transaction) => transaction.toJSON());
 		},
 	};
 };

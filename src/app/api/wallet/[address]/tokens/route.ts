@@ -3,6 +3,8 @@ import { getMoralisClient } from "@src/services/getMoralisClient";
 import { weiToEther } from "@src/utils/blockchain/weiToEther";
 import { NextRequest, NextResponse } from "next/server";
 
+export const revalidate = 0;
+
 export async function GET(
 	request: NextRequest,
 	{ params }: { params: { address: string } }

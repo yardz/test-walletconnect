@@ -2,6 +2,8 @@ import { NFT, WalletNFTs } from "@src/interfaces/api";
 import { getMoralisClient } from "@src/services/getMoralisClient";
 import { NextRequest, NextResponse } from "next/server";
 
+export const revalidate = 0;
+
 export async function GET(
 	request: NextRequest,
 	{ params }: { params: { address: string } }
