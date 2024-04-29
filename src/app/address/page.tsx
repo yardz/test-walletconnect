@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Address } from "@src/components/Address";
 import { NFTs } from "@src/components/NFTs";
 import { Overview } from "@src/components/Overview";
