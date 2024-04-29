@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Logo } from "@src/components/Logo";
 // import { SearchBox } from "@src/components/SearchBox";
 
