@@ -1,0 +1,16 @@
+.Overview {
+	width: 100%;
+	height: 100%;
+
+	.stack {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}

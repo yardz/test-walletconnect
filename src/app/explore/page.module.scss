@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.explore {
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+
+		margin-top: 30vh;
+
+		@media (max-width: $layout-breakpoint-small) {
+			gap: 20px;
+		}
+	}
+}

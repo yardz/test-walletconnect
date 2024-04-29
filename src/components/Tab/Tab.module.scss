@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.Tab {
+	.header {
+		max-width: 100%;
+		margin-bottom: 5px;
+		display: flex;
+		align-items: stretch;
+		@media (max-width: $layout-breakpoint-small) {
+			align-items: center;
+			flex-direction: column;
+		}
+
+		button {
+			background: transparent;
+			border: 1px solid #ccc;
+			border-right: none;
+			padding: 5px 10px;
+			cursor: pointer;
+			transition: all 0.3s linear;
+			width: 100%;
+
+			&:last-child {
+				border-right: 1px solid #ccc;
+			}
+
+			&.active {
+				background: #000;
+				color: #ccc;
+			}
+
+			@media (max-width: $layout-breakpoint-small) {
+				border: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+			}
+		}
+	}
+	.content {
+	}
+}

@@ -1,0 +1,54 @@
+// @import 'node_modules/@aikon/component-library/_styles/scss/index.scss';
+
+.longText {
+	min-width: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.pointerCursor {
+		cursor: pointer;
+		// color: $aikon-blue !important;
+	}
+
+	.link {
+		color: inherit;
+		text-align: center;
+		flex: 1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.goTo {
+		margin-left: 5px;
+
+		* {
+			color: #08b6e7;
+			font-size: 18px;
+		}
+	}
+	.copy {
+		width: 16px;
+		height: 16px;
+		margin-left: 3px;
+
+		> div {
+			width: 100%;
+			height: 100%;
+
+			&::after {
+				transform: none;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+.truncateMiddle {
+	word-break: keep-all;
+	overflow-wrap: normal;
+}

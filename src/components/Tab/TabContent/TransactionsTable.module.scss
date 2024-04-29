@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+
+.container {
+	max-width: 100%;
+	overflow: auto;
+}
+
+.table {
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+	min-width: 900px;
+
+	td {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: center;
+		padding: 5px 0px;
+
+		&.summary {
+			font-size: 14px;
+			font-weight: 500;
+
+			text-overflow: initial;
+			white-space: break-spaces;
+			text-align: center;
+		}
+	}
+
+	td {
+		border: 1px solid #e5e5e5;
+	}
+	th {
+		font-size: 14px;
+		font-weight: 700;
+		border: 1px solid #e5e5e5;
+		padding: 10px;
+		background: #e5e5e5;
+	}
+}

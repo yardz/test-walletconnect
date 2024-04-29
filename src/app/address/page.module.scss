@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.Address {
+	padding-top: 30px;
+	h2 {
+		font-size: 32px;
+		color: #333;
+		text-align: center;
+	}
+
+	.grid {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.pageSection {
+			max-width: 100%;
+			width: calc(33% - 40px);
+
+			@media (max-width: $layout-breakpoint-small) {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&.invalid {
+		padding-top: 30vh;
+	}
+}
